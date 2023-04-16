@@ -1,0 +1,51 @@
+a{
+    display: block;
+}
+.h1{
+    text-align: center;
+    
+    color: rgb(8, 63, 63);
+   padding-top: 30px;
+    padding-bottom: 20px;
+}
+.child-div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 300px;
+width: 300px;
+}
+img{
+height: 150px;
+width: 150px;
+border-radius: 20px;
+
+}
+.parent-div{
+display: flex;
+flex-direction: row;
+gap: 200px;
+justify-content: center;
+
+
+}
+.grand{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+}
+.href{
+    color: rgb(84, 10, 211);
+    text-decoration: none;
+    margin-top:10px ;
+}
+@media only screen and (max-width: 600px) {
+    .parent-div {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  

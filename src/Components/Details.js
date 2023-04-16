@@ -64,7 +64,7 @@ export default function Details(props) {
             {
                 <>
                     <div>
-
+                        <p>{props.data.id}</p>
                         <div id={props.data.id} className="description">
                             <h3 className="siteName">{props.data.name}</h3>
                             <Weather data={weather} />
