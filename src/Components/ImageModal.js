@@ -18,7 +18,6 @@ function ImageModal (props){
           />
           <Carousel.Caption>
             <h3>{props.imageDetails.name}</h3>
-            <p>{props.imageDetails.overview}</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={500}>
@@ -29,7 +28,6 @@ function ImageModal (props){
           />
           <Carousel.Caption>
             <h3>{props.imageDetails.name}</h3>
-            <p>{props.imageDetails.overview}</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -40,9 +38,6 @@ function ImageModal (props){
           />
           <Carousel.Caption>
             <h3>{props.imageDetails.name}</h3>
-            <p>
-            {props.imageDetails.overview}
-            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -53,9 +48,6 @@ function ImageModal (props){
           />
           <Carousel.Caption>
             <h3>{props.imageDetails.name}</h3>
-            <p>
-            {props.imageDetails.overview}
-            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
