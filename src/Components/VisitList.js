@@ -4,12 +4,10 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 
-
-
-
 export default function VisitList(props) {
     const commentRef = useRef();
     const [visitList, setVisitList] = useState([]);
+
     async function getVisitList() {
         let url =process.env.REACT_APP_SERVER_URL;
         let response = await fetch(url, {
@@ -29,7 +27,7 @@ export default function VisitList(props) {
             },
         })
         if (response.status === 204) {
-            getFavMovies();
+            getVisitList();
         }
     }
     async function handleUpdate(id) {
@@ -42,7 +40,7 @@ export default function VisitList(props) {
             },
             body: JSON.stringify({comments: userComment}),
         })
-        getFavMovies();
+        getVisitList();
     }
     useEffect(() => {
         getVisitList();
