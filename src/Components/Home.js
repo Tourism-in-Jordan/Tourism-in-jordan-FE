@@ -1,28 +1,58 @@
+import Details from "./Details";
+// import Card from "./Weather"
 
-import ImageModal from "./ImageModal";
-import {useState} from 'react';
-import MapModal from "./MapModal";
+import { useEffect, useState, useRef } from "react";
 
-function Home(props) {
+export default function Home() {
 
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    return (
-      <>
-      {
-            props.citys.map(details =>{
-                return(
-                    <>
-                    <ImageModal show={show}  handleClose={handleClose} imageDetails = {props.details}  />
-                    <MapModal show={show}  handleClose={handleClose} mapDetails = {props.details.name}  />
-                    </>
-                )
-            })
+    const [sitesData, setSitesData] = useState([])
+
+
+
+    async function displayDetails() {
+
+        let url = `${process.env.REACT_APP_SERVER_URL}`
+        try {
+            let response = await fetch(url)
+
+            let recievedData = await response.json();
+            setSitesData(recievedData);
+
         }
-    
-      </>
-    );
-  }
-  
-  export default Home;
+        catch (error) {
+            console.log(error)
+        }
+
+    }
+    // console.log(weather)
+    // console.log("sitesData", sitesData)
+
+    useEffect(() => {
+        displayDetails()
+    }, [])
+
+
+    return (
+        <> 
+            {
+                sitesData && sitesData.map(site => {
+                    return (
+                        <>
+                            <div>
+                                {/* <Card data={site} /> */}
+                            </div>
+                            <div>
+                                <Details data={site} />
+                            </div>
+
+                        </>
+
+                    )
+
+                })
+
+
+            }
+        </>
+    )
+}
