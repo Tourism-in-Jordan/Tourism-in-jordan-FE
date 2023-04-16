@@ -3,7 +3,7 @@ import axios from "axios";
 import Weather from "./Weather";
 import ImageModal from "./ImageModal";
 import MapModal from "./MapModal";
-
+import VisitList from "./VisitList";
 
 
 export default function Details(props) {
@@ -19,6 +19,29 @@ export default function Details(props) {
     const [weather, setWeather] = useState('')
 
 
+    async function addToVisitList() {
+
+        let url = `${process.env.REACT_APP_SERVER_URL}/addVisitList`
+
+        let data = {
+            name: props.data.name ,
+            city: props.data.city,
+            image: props.data.image,
+            overview: props.data.overview,
+            feedback: "",
+        }
+
+        // console.log(1111111111,data)
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+        
+
+    }
 
     function getWeather() {
 
@@ -50,6 +73,9 @@ export default function Details(props) {
                             <p className="overview">{props.data.overview}</p>
                             <button onClick={handleShow}>Show Modal</button>
                             <button onClick={handleMapShow}>Show Map</button>
+
+                            <button onClick={addToVisitList}>Add to visit List</button>
+                            
                         </div>
 
                     </div>
@@ -57,6 +83,7 @@ export default function Details(props) {
                     <div>
                         <ImageModal show={show} handleClose={handleClose} imageDetails={props.data} />
                         <MapModal showMap={showMap} handleMapClose={handleMapClose} mapDetails={props.data.name} />
+                        <></>
                     </div>
                 </>
 
