@@ -1,9 +1,9 @@
 import Details from "./Details";
 // import Card from "./Weather"
+import Card from "./Cards";
+import './Home.css'
 import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, useState, useRef } from "react";
-import "./Home.css"
-
 
 export default function Home() {
 
@@ -35,27 +35,48 @@ export default function Home() {
 
 
     return (
+        <> 
+        <div className="cards">
+        {
+                sitesData && sitesData.map(site => {
+                    return (
+                        <>
+                            <div>
+                                <Card data={site} />
+                            </div>
+                         
 
-        <>
-            <div className="back">
-                {
-                    sitesData && sitesData.map(site => {
-                        return (
-                            <>
+                        </>
 
-                                <div>
-                                    <Details data={site} />
-                                </div>
+                    )
 
-                            </>
-
-                        )
-
-                    })
+                })
 
 
-                }
-            </div>
+            }
+
+        </div>
+          
+            {
+                sitesData && sitesData.map(site => {
+                    return (
+                        <>
+                         
+                            <div>
+                                <Details data={site} />
+                            </div>
+
+                        </>
+
+                    )
+
+                })
+
+
+            }
+        </div>
+            
+
 
 
         </>
