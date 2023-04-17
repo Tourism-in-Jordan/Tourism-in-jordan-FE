@@ -1,0 +1,31 @@
+#imgmodal {
+    width: 1000px;
+}
+
+#modalBody {
+    width: 1000px;
+}
+
+.modal-xl {
+    margin-top: 0px;
+    /* max-width: 100%; */
+    /* max-height: 120vh ; */
+}
+
+.imageModal {
+    width: 1400px;
+    height: 850px;
+}
+
+/* #slider{
+    width: 1600px;
+} */
+
+#imageBody {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+}

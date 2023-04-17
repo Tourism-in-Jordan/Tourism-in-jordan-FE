@@ -3,7 +3,8 @@ import axios from "axios";
 import Weather from "./Weather";
 import ImageModal from "./ImageModal";
 import MapModal from "./MapModal";
-import VisitList from "./VisitList";
+// import VisitList from "./VisitList";
+import "./Details.css";
 
 
 export default function Details(props) {
@@ -24,7 +25,7 @@ export default function Details(props) {
         let url = `${process.env.REACT_APP_SERVER_URL}/addVisitList`
 
         let data = {
-            name: props.data.name ,
+            name: props.data.name,
             city: props.data.city,
             image: props.data.image,
             overview: props.data.overview,
@@ -39,7 +40,7 @@ export default function Details(props) {
             },
             body: JSON.stringify(data),
         })
-        
+
 
     }
 
@@ -64,7 +65,6 @@ export default function Details(props) {
             {
                 <>
                     <div>
-                        <p>{props.data.id}</p>
                         <div id={props.data.id} className="description">
                             <h3 className="siteName">{props.data.name}</h3>
                             <Weather data={weather} />
@@ -73,9 +73,7 @@ export default function Details(props) {
                             <p className="overview">{props.data.overview}</p>
                             <button onClick={handleShow}>Show Modal</button>
                             <button onClick={handleMapShow}>Show Map</button>
-
                             <button onClick={addToVisitList}>Add to visit List</button>
-                            
                         </div>
 
                     </div>
@@ -88,9 +86,6 @@ export default function Details(props) {
                 </>
 
             }
-
-
-
 
         </>
     )
