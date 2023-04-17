@@ -7,12 +7,13 @@ export default function Cards(props) {
         <>
             {
                 
+                
                     <div  className='card'>
                        
 
                         
-                            <h3 className="siteName">{props.data.name}</h3>
-                            <img src={props.data.image.imageUrl_1} alt="image" />
+                          <div className="siteName">  <h3 >{props.data.name}</h3> </div>  
+                            <img id='imgCard' src={props.data.image.imageUrl_1} alt="image" />
 
                         
                         

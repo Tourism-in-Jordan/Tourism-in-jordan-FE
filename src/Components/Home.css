@@ -1,13 +1,16 @@
 .cards{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
     padding: 2%;
     text-decoration: none;
-    /* background-color: brown; */
+    width: 100vw;
+    /* height: 50vh; */
+    margin: auto;
+    gap: 20px;
+    background-color: rgba(16, 15, 15, 0.108);
 }
 
-.cards:hover {
-    transform: translateY(8px);
-  }
+
   

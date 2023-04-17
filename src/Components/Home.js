@@ -1,6 +1,7 @@
 import Details from "./Details";
 // import Card from "./Weather"
 import Card from "./Cards";
+import './Home.css'
 
 import { useEffect, useState, useRef } from "react";
 
@@ -43,9 +44,7 @@ export default function Home() {
                             <div>
                                 <Card data={site} />
                             </div>
-                            <div>
-                                {/* <Details data={site} /> */}
-                            </div>
+                         
 
                         </>
 
@@ -62,9 +61,7 @@ export default function Home() {
                 sitesData && sitesData.map(site => {
                     return (
                         <>
-                            <div>
-                                {/* <Card data={site} /> */}
-                            </div>
+                         
                             <div>
                                 <Details data={site} />
                             </div>

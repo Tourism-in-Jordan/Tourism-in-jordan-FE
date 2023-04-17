@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 export default function Footer() {
 
     return (
-        <footer className="site-footer">
+        <footer id='footer' className="site-footer">
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-6">

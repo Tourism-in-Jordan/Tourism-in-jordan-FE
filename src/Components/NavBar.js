@@ -9,9 +9,9 @@ import VisitList from "./VisitList";
 export default function NavBar() {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      {/* <Navbar bg="light" expand="lg">
         <Container>
-          {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
+          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -38,20 +38,37 @@ export default function NavBar() {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
 
 
 
 
 
-      {/* <nav>
+      <nav>
         <Link to="/">HOME</Link>
         <Link to="/about">about us</Link>
         <Link to="/VisitList">VisitList</Link>
 
         <a href="#footer">connect us</a>
         <a href="#13">The Royal Automobile Museum</a>
-        <select>
+
+        <NavDropdown title="select a city" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#1">Perta</NavDropdown.Item>
+                <NavDropdown.Item href="#2">Om-Qais</NavDropdown.Item>
+                <NavDropdown.Item href="#3">Dead sea</NavDropdown.Item>
+                <NavDropdown.Item href="#4">Jarash Ruins</NavDropdown.Item>
+                <NavDropdown.Item href="#5">Ajloun Castle</NavDropdown.Item>
+                <NavDropdown.Item href="#6">Wadi Rum</NavDropdown.Item>
+                <NavDropdown.Item href="#7">Aqaba Beach</NavDropdown.Item>
+                <NavDropdown.Item href="#8">Roman Ruins</NavDropdown.Item>
+                <NavDropdown.Item href="#9">Wadi Mujib</NavDropdown.Item>
+                <NavDropdown.Item href="#10">Qasr Amra</NavDropdown.Item>
+                <NavDropdown.Item href="#11">South Amman</NavDropdown.Item>
+                <NavDropdown.Item href="#12"> Qasr al-Abd </NavDropdown.Item>
+                <NavDropdown.Item href="#13"> The Royal Automobile Museum</NavDropdown.Item>
+                <NavDropdown.Item href="#14">  Dibbeen Forest Reserve</NavDropdown.Item>
+              </NavDropdown>
+        {/* <select>
           <option>select a city</option>
           <option>
             <a href="#1">Perta</a>
@@ -94,8 +111,8 @@ export default function NavBar() {
           <option>
             <a href="#14">Dibbeen Forest Reserve</a>
           </option>
-        </select>
-      </nav> */}
+        </select> */}
+      </nav>
 
   
     </>
