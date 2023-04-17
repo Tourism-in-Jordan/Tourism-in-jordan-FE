@@ -2,12 +2,12 @@ import { useEffect, useState, useRef } from 'react';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-
+import { useAuth0 } from '@auth0/auth0-react';
 
 export default function VisitList(props) {
     const commentRef = useRef();
     const [visitList, setVisitList] = useState([]);
-
+    const {loginWithRedirect,isAuthenticated}= useAuth0()
     async function getVisitList() {
         let url = `${process.env.REACT_APP_SERVER_URL}/vistList`;
         let response = await fetch(url, {
@@ -51,6 +51,7 @@ export default function VisitList(props) {
         getVisitList();
     }, [])
     return (
+        isAuthenticated&&( 
         <>
             <h2>Welcome to Visit List Page</h2>
             <div id='cards'>
@@ -90,5 +91,5 @@ export default function VisitList(props) {
                 }
             </div>
         </>
-    )
+    ))
 }

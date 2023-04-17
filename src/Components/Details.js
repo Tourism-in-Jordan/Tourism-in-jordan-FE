@@ -4,10 +4,13 @@ import Weather from "./Weather";
 import ImageModal from "./ImageModal";
 import MapModal from "./MapModal";
 import VisitList from "./VisitList";
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 export default function Details(props) {
     // console.log(props.data.city,"props.data")
+    const {logout,isAuthenticated}= useAuth0()
+
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -73,9 +76,9 @@ export default function Details(props) {
                             <p className="overview">{props.data.overview}</p>
                             <button onClick={handleShow}>Show Modal</button>
                             <button onClick={handleMapShow}>Show Map</button>
-
+                            {isAuthenticated &&(
                             <button onClick={addToVisitList}>Add to visit List</button>
-                            
+                            )}
                         </div>
 
                     </div>
