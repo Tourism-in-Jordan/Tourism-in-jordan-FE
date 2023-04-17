@@ -7,11 +7,17 @@ import Home from "./Components/Home";
 import VisitList from "./Components/VisitList";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
+import LoginButton from "./Components/LoginButton";
+import LogoutButton from "./Components/LogoutButton";
+import Profile from "./Components/Profile";
+
 
 function App() {
   return (
     <>
       <Header />
+
+
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path="/about" element={<AboutUs />}></Route>
