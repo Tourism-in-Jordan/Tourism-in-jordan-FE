@@ -38,10 +38,10 @@ export default function Home() {
                 sitesData && sitesData.map(site => {
                     return (
                         <>
-                            <div>
+                            <div >
                                 {/* <Card data={site} /> */}
                             </div>
-                            <div>
+                            <div >
                                 <Details data={site} />
                             </div>
 

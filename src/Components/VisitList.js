@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-
+import './Header/Header.css'
 
 export default function VisitList(props) {
     const commentRef = useRef();
@@ -59,8 +59,8 @@ export default function VisitList(props) {
                     visitList && visitList.map(site => {
                         console.log(site.id)
                         return (
-                            <div id='card'>
-                                <Card id='incard'>
+                            <div  id='card'>
+                                <Card id='incard' >
                                     <Card.Img id="img" variant="top" src={site.image} />
                                     <Card.Body>
                                         <Card.Title>{site.name}</Card.Title>

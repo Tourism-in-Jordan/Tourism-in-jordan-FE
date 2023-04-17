@@ -1,10 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import '../Components/ImagModle.css'
 function ImageModal (props){
     return(
-         
-        <Modal show={props.show} onHide={props.handleClose} >
+         <div className='modal'>
+        <Modal  id='modleBody' show={props.show} onHide={props.handleClose} >
       <Modal.Header closeButton>
         <Modal.Title></Modal.Title>
       </Modal.Header>
@@ -58,7 +59,7 @@ function ImageModal (props){
         </Button>
       </Modal.Footer>
     </Modal>
-       
+    </div>
     )
 }
 export default ImageModal;

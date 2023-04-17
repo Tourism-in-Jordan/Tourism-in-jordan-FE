@@ -4,17 +4,17 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import VisitList from "./VisitList";
-
+import './nav.css'
 export default function NavBar() {
   return (
     <>
-      <nav>
-        <Link to="/">HOME</Link>
-        <Link to="/about">about us</Link>
-        <Link to="/VisitList">VisitList</Link>
+      <nav className="allnav">
+      <p className="logo">Tourisum in Jordan</p>
+        <Link className="pages" to="/">HOME</Link>
+        <Link className="pages" to="/about">About us</Link>
+        <Link className="pages" to="/VisitList">VisitList</Link>
 
-        <a href="#footer">connect us</a>
-        <select>
+        <select className="selectitem">
           <option>select a city</option>
           <option>
             <a href="#1">Perta</a>
