@@ -5,16 +5,37 @@ import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import VisitList from "./VisitList";
 
+
+import './nav.css'
 export default function NavBar() {
   return (
     <>
-      <nav>
-        <Link to="/">HOME</Link>
-        <Link to="/about">about us</Link>
-        <Link to="/VisitList">VisitList</Link>
+      <nav className="allnav">
+      <p className="logo">Tourisum in Jordan</p>
+        <Link className="pages" to="/">HOME</Link>
+        <Link className="pages" to="/about">About us</Link>
+        <Link className="pages" to="/VisitList">VisitList</Link>
 
         <a href="#footer">connect us</a>
-        <select>
+        <a href="#13">The Royal Automobile Museum</a>
+
+        <NavDropdown title="select a city" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#1">Perta</NavDropdown.Item>
+                <NavDropdown.Item href="#2">Om-Qais</NavDropdown.Item>
+                <NavDropdown.Item href="#3">Dead sea</NavDropdown.Item>
+                <NavDropdown.Item href="#4">Jarash Ruins</NavDropdown.Item>
+                <NavDropdown.Item href="#5">Ajloun Castle</NavDropdown.Item>
+                <NavDropdown.Item href="#6">Wadi Rum</NavDropdown.Item>
+                <NavDropdown.Item href="#7">Aqaba Beach</NavDropdown.Item>
+                <NavDropdown.Item href="#8">Roman Ruins</NavDropdown.Item>
+                <NavDropdown.Item href="#9">Wadi Mujib</NavDropdown.Item>
+                <NavDropdown.Item href="#10">Qasr Amra</NavDropdown.Item>
+                <NavDropdown.Item href="#11">South Amman</NavDropdown.Item>
+                <NavDropdown.Item href="#12"> Qasr al-Abd </NavDropdown.Item>
+                <NavDropdown.Item href="#13"> The Royal Automobile Museum</NavDropdown.Item>
+                <NavDropdown.Item href="#14">  Dibbeen Forest Reserve</NavDropdown.Item>
+              </NavDropdown>
+        {/* <select>
           <option>select a city</option>
           <option>
             <a href="#1">Perta</a>
@@ -46,9 +67,8 @@ export default function NavBar() {
           <option>
             <a href="#10">Qasr Amra</a>
           </option>
-          <option>
-            <a href="#11">South Amman</a>
-          </option>
+           <a href="#11">South Amman<option>
+          </option></a>
           <option>
             <a href="#12">Qasr al-Abd</a>
           </option>
@@ -58,7 +78,7 @@ export default function NavBar() {
           <option>
             <a href="#14">Dibbeen Forest Reserve</a>
           </option>
-        </select>
+        </select> */}
       </nav>
 
       {/* <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
