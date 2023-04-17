@@ -6,30 +6,12 @@ export default function Cards(props) {
     return (
         <>
             {
-                
-                
-                    <div  className='card'>
-                       
 
-                        
+                    <div  className='card'>
                           <div className="siteName">  <h3 >{props.data.name}</h3> </div>  
                             <img id='imgCard' src={props.data.image.imageUrl_1} alt="image" />
-
-                        
-                        
-
-                   
-
-
                     </div>
-
-
-
-
-            
-
             }
-
 
             {/* <Card id='card'  style={{ width: '20rem' }} >
 

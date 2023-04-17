@@ -4,13 +4,15 @@ import React, { Component } from 'react';
 export default function Footer() {
 
     return (
-        <footer id='footer' className="site-footer">
-        <footer className="site-footer" >
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-12 col-md-6">
-                        <h6>About</h6>
-                        <p className="text-justify">Our first idea is a web site or a mobile app, called (Tourism In Jordan)introduction. Our app will help people to find the best Place to visit in jordan ,
+        <footer className='footerend' id='footer'>
+        <div class="footer-top">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-4">
+                        
+                        <h4>About us</h4>
+                        <p>Our first idea is a web site or a mobile app, called (Tourism In Jordan)introduction. Our app will help people to find the best Place to visit in jordan ,
                             so as a user I can open the web site and it will show the best visted palces in jordan with all discription and
                             details about each plaece( contain all overview , picutres, location, weather status...), if you liked some places you can (add or delete )it from your favorite list and you can write your feed back about the place .</p>
                     </div>
@@ -44,6 +46,7 @@ export default function Footer() {
         </div>
     </footer>
     )
+
 
 }
 
