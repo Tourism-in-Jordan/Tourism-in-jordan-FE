@@ -1,13 +1,14 @@
 import Details from "./Details";
 // import Card from "./Weather"
 import { useAuth0 } from "@auth0/auth0-react";
-
 import { useEffect, useState, useRef } from "react";
+import "./Home.css"
+
 
 export default function Home() {
 
     const [sitesData, setSitesData] = useState([])
-    const {loginWithRedirect,isAuthenticated}= useAuth0()
+    const { loginWithRedirect, isAuthenticated } = useAuth0()
 
 
     async function displayDetails() {
@@ -32,31 +33,32 @@ export default function Home() {
         displayDetails()
     }, [])
 
-   
+
     return (
-        
-        <> 
-            {
-                sitesData && sitesData.map(site => {
-                    return (
-                        <>
-                            <div >
-                                {/* <Card data={site} /> */}
-                            </div>
-                            <div >
-                                <Details data={site} />
-                            </div>
 
-                        </>
+        <>
+            <div className="back">
+                {
+                    sitesData && sitesData.map(site => {
+                        return (
+                            <>
 
-                    )
+                                <div>
+                                    <Details data={site} />
+                                </div>
 
-                })
+                            </>
+
+                        )
+
+                    })
 
 
-            }
-            
+                }
+            </div>
+
+
         </>
-        
+
     )
 }
