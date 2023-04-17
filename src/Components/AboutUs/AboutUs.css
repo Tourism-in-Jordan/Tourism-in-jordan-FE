@@ -1,0 +1,126 @@
+body{
+	background-color: #34495e;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lora', serif;
+}
+
+.card{
+	background-color: #fff;
+	height: 450px;
+	width: 300px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px 10px #262626;
+   
+}
+
+.upper{
+	height: 150px;
+	width: 300px;
+	background-color: #1abc9c;
+	border-radius: 10px 10px 0 0;
+}
+
+.img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: relative;
+	top: 80px;
+	left: 70px;
+	border: 4px solid #fff;
+	outline: none;
+
+}
+
+h2{
+	color: #404040;
+	text-align: center;
+	position: relative;
+	top: 70px;
+}
+
+h3{
+	text-align: center;
+	position: relative;
+	top: 50px;
+	color: #7f8c8d;
+}
+
+.details{
+	position: relative;
+	top: 40px;
+	font-size: 18px;
+	color: #7f8c8d;
+}
+
+.details i{
+	color: #404040;
+	margin-left: 30px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+}
+
+.social{
+	font-size: 25px;
+	position: relative;
+	top: 50px;
+	left: 70px;
+}
+
+.social i{
+	margin-left: 25px;
+	color: #1abc9c;
+}
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    display: table;
+    clear: both;
+  }
+  .AboutUs_h1{
+    display: flex;
+    justify-content: center;
+  }
+  .all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-content: center;
+  }
+  .AboutUs_h5 {
+    font-size: 25px;
+    text-align: center !important;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid;
+    border: 20%;
+    color: rgb(0, 0, 0);
+  
+    border-radius: 20px;
+  
+    border-color: rgb(0, 0, 0);
+    padding: 3%;
+    background-color: #ccc;
+    
+  }
+  .h3{
+    color: black;
+  }
+  .alldivend{
+    background-color: #e9e7e7;
+    padding-top: 45px;
+  }
