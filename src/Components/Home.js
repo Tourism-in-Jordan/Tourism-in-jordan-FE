@@ -1,5 +1,6 @@
 import Details from "./Details";
 // import Card from "./Weather"
+import Card from "./Cards";
 
 import { useEffect, useState, useRef } from "react";
 
@@ -34,6 +35,29 @@ export default function Home() {
 
     return (
         <> 
+        <div className="cards">
+        {
+                sitesData && sitesData.map(site => {
+                    return (
+                        <>
+                            <div>
+                                <Card data={site} />
+                            </div>
+                            <div>
+                                {/* <Details data={site} /> */}
+                            </div>
+
+                        </>
+
+                    )
+
+                })
+
+
+            }
+
+        </div>
+          
             {
                 sitesData && sitesData.map(site => {
                     return (

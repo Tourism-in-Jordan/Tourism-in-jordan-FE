@@ -1,0 +1,13 @@
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2%;
+    text-decoration: none;
+    /* background-color: brown; */
+}
+
+.cards:hover {
+    transform: translateY(8px);
+  }
+  
