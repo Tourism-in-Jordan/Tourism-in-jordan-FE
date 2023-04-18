@@ -1,4 +1,4 @@
-.card {
+.cardOfCard {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,6 +10,7 @@
     top: 0;
     margin: 0 !important;
     transition: 0.6s;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 .card:hover {
     box-shadow: 0px 0px 30px rgb(81, 80, 80);
