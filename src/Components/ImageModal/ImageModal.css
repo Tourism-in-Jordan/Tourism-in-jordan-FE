@@ -7,14 +7,15 @@
 }
 
 .modal-xl {
-    margin-top: 0px;
+    padding-top: 3vh;
+    /* margin-top: 0px; */
     /* max-width: 100%; */
     /* max-height: 120vh ; */
 }
 
 .imageModal {
-    width: 1400px;
-    height: 850px;
+    width: 1100px;
+    height: 89vh;
 }
 
 /* #slider{
@@ -28,4 +29,7 @@
     align-items: center;
     padding: 0;
     margin: auto;
+}
+.ImageModalCarousel{
+    transition: transform 0.1s ease-in-out;
 }

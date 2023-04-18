@@ -1,7 +1,7 @@
 export default function Weather(props){
     return (
         <>
-        <p>{`${props.data.temp}°`}</p>
+        <h5 id="Temp">{`${props.data.temp}°`}</h5>
         </>
     );
 }

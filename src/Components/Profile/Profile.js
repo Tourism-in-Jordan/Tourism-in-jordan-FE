@@ -13,5 +13,4 @@ const {user,isAuthenticated}= useAuth0()
 
     )
 )
-
 }

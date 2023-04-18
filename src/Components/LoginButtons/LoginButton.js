@@ -9,7 +9,7 @@ export default function LoginButton() {
     return (
         !isAuthenticated && (
 
-            <Button variant="outline-success" style={{height:"40px"}} onClick={() => loginWithRedirect()} >Log in</Button>
+            <Button variant="warning" style={{height:"40px"}} onClick={() => loginWithRedirect()} >Log in</Button>
 
 
         )

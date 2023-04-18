@@ -11,45 +11,33 @@ function ImageModal(props) {
       </Modal.Header> */}
       <Modal.Body id='imageBody' >
         <Carousel id='slider' >
-          <Carousel.Item interval={1000}>
+          <Carousel.Item className='ImageModalCarousel' interval={5000}>
             <img
               className="imageModal"
               src={props.imageDetails.image.imageUrl_1}
               alt={props.imageDetails.name}
             />
-            <Carousel.Caption>
-              <h3>{props.imageDetails.name}</h3>
-            </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={500}>
+          <Carousel.Item  className='ImageModalCarousel' interval={5000} >
             <img
               className="imageModal"
               src={props.imageDetails.image.imageUrl_2}
               alt={props.imageDetails.name}
             />
-            <Carousel.Caption>
-              <h3>{props.imageDetails.name}</h3>
-            </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className='ImageModalCarousel' interval={5000}>
             <img
               className="imageModal"
               src={props.imageDetails.image.imageUrl_3}
               alt={props.imageDetails.name}
             />
-            <Carousel.Caption>
-              <h3>{props.imageDetails.name}</h3>
-            </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className='ImageModalCarousel' interval={5000}>
             <img
               className="imageModal"
               src={props.imageDetails.image.imageUrl_4}
               alt={props.imageDetails.name}
             />
-            <Carousel.Caption>
-              <h3>{props.imageDetails.name}</h3>
-            </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
       </Modal.Body>
