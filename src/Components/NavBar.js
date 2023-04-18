@@ -15,6 +15,7 @@ export default function NavBar() {
     <>
     <nav className="allnav">
     <div id="iconHeader">
+     <img id="logoNavbar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_and_map_of_Jordan.svg/929px-Flag_and_map_of_Jordan.svg.png" />
     <Link className="pages" to="/">HOME</Link>
         <Link className="pages" to="/about">About us</Link>
         <Link className="pages" to="/VisitList">VisitList</Link>

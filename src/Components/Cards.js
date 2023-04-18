@@ -14,7 +14,7 @@ export default function Cards(props) {
         <>
             {
 
-                    <div  className='card'>
+                    <div  className='cardOfCard'>
                         <Link id="link" onClick={handleShow}>
                           <h3 className="siteName" >{props.data.name}</h3> 
                             <img id='imgCard' src={props.data.image.imageUrl_1} alt="image" />
