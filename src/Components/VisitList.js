@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useAuth0 } from '@auth0/auth0-react';
 import './Header/Header.css'
+import './VisitList.css'
 
 
 
@@ -56,8 +57,8 @@ export default function VisitList(props) {
     return (
         isAuthenticated&&( 
         <>
-            <h2>Welcome to Visit List Page</h2>
-            <div id='cards'>
+
+            <div id='cards' className='cards'>
 
                 {
                     visitList && visitList.map(site => {
@@ -68,24 +69,17 @@ export default function VisitList(props) {
                                     <Card.Img id="img" variant="top" src={site.image} />
                                     <Card.Body>
                                         <Card.Title>{site.name}</Card.Title>
-                                        {/* <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                            {site.feedback ? site.feedback : "No comment "}
-                                            <br></br>
-                                            <Form.Control id="textarea" ref={commentRef} as="textarea" rows={1} placeholder="Update your comment" />
-                                        </Form.Group> */}
+                                        
                                         <Form onSubmit={(event) => handleUpdate(event, site.id)}>
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control name="feedback" as="textarea" rows={1} ref={commentRef} />
-                                                {site.feedback ? site.feedback : "No comment "}
+                                                <Form.Control name="feedback" placeholder='Add feedback here' as="textarea" rows={1} ref={commentRef} />
+                                                {site.feedback ? site.feedback : "No Feedback yet! "}
                                             </Form.Group>
                                             <Button variant="primary" type="submit" > Edit Feedback </Button>
                                         <Button variant="danger" onClick={() => handleDelete(site.id)}>
                                             Delete
                                         </Button>
                                         </Form>
-                                        {/* <Button variant="info" onClick={() => handleUpdate(site.id)}>
-                                            UPDATE
-                                        </Button> */}
                                     </Card.Body>
                                 </Card>
                             </div>

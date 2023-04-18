@@ -1,0 +1,21 @@
+/* #profile{
+    display: flex;
+    flex-direction: column;
+} */
+
+#profile{
+   display: grid;
+   grid-template-columns: 1fr;
+   text-align: center;
+   margin: 0;
+   gap: 0px;
+}
+#userName{
+    color: white;
+    font-size: 15px;
+}
+#imgProfile{
+    margin: auto;
+    width: 40px;
+    border-radius: 50%;
+}
