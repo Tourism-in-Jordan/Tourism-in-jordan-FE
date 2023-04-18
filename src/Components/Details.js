@@ -50,7 +50,7 @@ export default function Details(props) {
 
         let url = `${process.env.REACT_APP_SERVER_URL}/weather/${props.data.city}`;
         axios.get(url).then(result => {
-            setWeather(result.data.main)
+            setWeather(result.data.weather)
 
         })
 
@@ -68,9 +68,16 @@ export default function Details(props) {
                             {/* <img src={props.data.image.imageUrl_1} /> */}
                             <div id={props.data.id} className="description">
                             <h3 className="siteName">{props.data.name}</h3>
-                            <Weather data={weather} />
+                            <Weather className="temp"  data={weather} />
                             <h5 className="cityName">{props.data.city}</h5>
                             <p className="overview">{props.data.overview}</p>
+                            <img className="smallimg" src={props.data.image.imageUrl_2} alt="image" />
+                            <img className="smallimg" src={props.data.image.imageUrl_3} alt="image" />
+                            <img className="smallimg" src={props.data.image.imageUrl_4} alt="image" />
+                            
+                            
+                            
+                            
                             
 
                             {isAuthenticated && (

@@ -57,8 +57,17 @@ img {
     position: absolute;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.471);
+    background-color: rgba(0, 0, 0, 0.584);
 }
-.overview{
+.overview , .cityName , .temp{
     color: #f8f5f5;
+}
+
+.smallimg{
+    width: 150px;
+}
+
+.siteName{
+    color: #f8f5f5;
+    font-size: 50px;
 }
