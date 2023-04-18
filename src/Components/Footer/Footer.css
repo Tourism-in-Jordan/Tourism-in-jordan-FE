@@ -1,3 +1,10 @@
+.row{
+  --bs-gutter-x: 0rem
+
+}
+
+
+
 footer {
   color: #fff;
 }
