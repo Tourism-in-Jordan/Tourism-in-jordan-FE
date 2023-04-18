@@ -63,31 +63,38 @@ export default function Details(props) {
         <>
             {
                 <>
-                    <div>
-                        <div id={props.data.id} className="description">
+                
+                        <div className="imgBack" >
+                            {/* <img src={props.data.image.imageUrl_1} /> */}
+                            <div id={props.data.id} className="description">
                             <h3 className="siteName">{props.data.name}</h3>
                             <Weather data={weather} />
                             <h5 className="cityName">{props.data.city}</h5>
                             <p className="overview">{props.data.overview}</p>
+                            
 
                             {isAuthenticated && (
                                 <button onClick={addToVisitList}>Add to visit List</button>
                             )}
-                        </div>
-
-                        <div className="desc-links">
-                            <Link id="link" onClick={handleShow}>
-                                <div id="Main-img">
-                                    <img src={props.data.image.imageUrl_1} alt="image" />
-                                </div>
-                            </Link>
-                            <Link id="link" onClick={handleMapShow}>
+                             <Link id="link" onClick={handleMapShow}>
                                 <div id="ico">
                                     <img src={require('./map.png')} alt="image" />
                                 </div>
                             </Link>
                         </div>
-                    </div>
+                        <Link id="link" onClick={handleShow}>
+                                <div id="Main-img">
+                                    <img src={props.data.image.imageUrl_1} alt="image" />
+                                </div>
+                            </Link>
+                           
+
+                        <div className="desc-links">
+                           
+                        </div>
+                        </div>
+                        
+                    
 
 
 

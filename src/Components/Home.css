@@ -5,12 +5,38 @@
     /* flex-wrap: wrap; */
     padding: 2%;
     text-decoration: none;
-    width: 100vw;
-    /* height: 50vh; */
+    width: 80vw;
+    height: 2500px;
     margin: auto;
     gap: 20px;
     background-color: rgba(16, 15, 15, 0.108);
+    /* top: 0; */
+    right: 0;
 }
+
+@media screen and (max-width: 850px){
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* body {
+        width: 100%;
+    } */
+    .projects-div{
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .projects-grid{
+        margin: auto;
+        background-color:#303841;
+        border-radius: 5px;
+        width: 600px;
+        height: 500px;
+    }
+    
+  }
 
 
   

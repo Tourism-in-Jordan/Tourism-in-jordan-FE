@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useAuth0 } from '@auth0/auth0-react';
 import './Header/Header.css'
+import './VisitList.css'
 
 
 
@@ -56,7 +57,7 @@ export default function VisitList(props) {
     return (
         isAuthenticated&&( 
         <>
-            <h2>Welcome to Visit List Page</h2>
+            {/* <h2>Welcome to Visit List Page</h2> */}
             <div id='cards'>
 
                 {
