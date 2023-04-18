@@ -23,7 +23,7 @@ export default function NavBar() {
         {/* <a href="#13">The Royal Automobile Museum</a> */}
 
         <NavDropdown title="select a city" id="basic-nav-dropdown" style={{ color: "rgb(177, 178, 179)" }}>
-          <NavDropdown.Item href="#1">Perta</NavDropdown.Item>
+          <NavDropdown.Item href="#1">Petra</NavDropdown.Item>
           <NavDropdown.Item href="#2">Om-Qais</NavDropdown.Item>
           <NavDropdown.Item href="#3">Dead sea</NavDropdown.Item>
           <NavDropdown.Item href="#4">Jarash Ruins</NavDropdown.Item>
@@ -34,9 +34,9 @@ export default function NavBar() {
           <NavDropdown.Item href="#9">Wadi Mujib</NavDropdown.Item>
           <NavDropdown.Item href="#10">Qasr Amra</NavDropdown.Item>
           <NavDropdown.Item href="#11">South Amman</NavDropdown.Item>
-          <NavDropdown.Item href="#12"> Qasr al-Abd </NavDropdown.Item>
-          <NavDropdown.Item href="#13"> The Royal Automobile Museum</NavDropdown.Item>
-          <NavDropdown.Item href="#14">  Dibbeen Forest Reserve</NavDropdown.Item>
+          <NavDropdown.Item href="#12">Qasr al-Abd </NavDropdown.Item>
+          <NavDropdown.Item href="#13">The Royal Automobile Museum</NavDropdown.Item>
+          <NavDropdown.Item href="#14">Dibbeen Forest Reserve</NavDropdown.Item>
         </NavDropdown>
       
     </div>

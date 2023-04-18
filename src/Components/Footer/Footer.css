@@ -1,6 +1,9 @@
 footer {
   color: #fff;
 }
+.row{
+  --bs-gutter-x: 0rem;
+}
 ul {
   padding: 0px;
 }
