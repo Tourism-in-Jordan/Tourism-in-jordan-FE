@@ -23,7 +23,7 @@ body{
 .upper{
 	height: 150px;
 	width: 300px;
-	background-color: #1abc9c;
+	background-color: #2db8b8;
 	border-radius: 10px 10px 0 0;
 }
 
@@ -121,6 +121,9 @@ h3{
     color: black;
   }
   .alldivend{
-    background-color: #e9e7e7;
+	background-image: linear-gradient(to bottom, rgba(104, 104, 104, 0.6) 0%,rgba(0, 0, 0, 0.9) 200%), url('https://cdn.britannica.com/24/153524-050-BA9D084B/Al-Dayr-Petra-Jordan.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 45px;
   }
