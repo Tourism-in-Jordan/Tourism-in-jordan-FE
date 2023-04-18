@@ -2,13 +2,13 @@ import Details from "./Details";
 // import Card from "./Weather"
 import Card from "./Cards";
 import './Home.css'
-
+import { useAuth0 } from "@auth0/auth0-react";
 import { useEffect, useState, useRef } from "react";
 
 export default function Home() {
 
     const [sitesData, setSitesData] = useState([])
-
+    const { loginWithRedirect, isAuthenticated } = useAuth0()
 
 
     async function displayDetails() {
@@ -56,6 +56,7 @@ export default function Home() {
             }
 
         </div>
+        <div className="back">
           
             {
                 sitesData && sitesData.map(site => {
@@ -74,6 +75,12 @@ export default function Home() {
 
 
             }
+        </div>
+            
+
+
+
         </>
+
     )
 }
