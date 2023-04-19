@@ -20,7 +20,7 @@ export default function Header() {
                     <Carousel.Item>
                         <img
                             className='CarouselImg'
-                            src='https://imgy.pro/jordannews/993x560/1202226182343303138684.jpg'
+                            src=''
                             alt=""
                         />
 
@@ -28,7 +28,7 @@ export default function Header() {
                     <Carousel.Item>
                         <img
                             className='CarouselImg'
-                            src='https://res.cloudinary.com/odysseytraveller/image/fetch/f_auto,q_auto,dpr_auto,r_4,w_765,h_535.5,c_limit/https://cdn.odysseytraveller.com/app/uploads/2020/01/South-Theatre-in-the-Jerash-ruins-Jordan-GettyImages-1160888630.jpg'
+                            src='https://www.muchbetteradventures.com/magazine/content/images/2022/09/wadi-rum.jpg'
                             alt=""
                         />
 
@@ -44,7 +44,7 @@ export default function Header() {
                     <Carousel.Item interval={7000}>
                         <img
                             className='CarouselImg'
-                            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoidaj7m5fAdddTbEDluLmyW5GNMlNI10rETPINxHF6ORXsmnpymcNirLTMAZ73-jAj2o&usqp=CAU'
+                            src='https://images.unsplash.com/photo-1679569398860-5f7780d74ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1896&q=80'
                             alt=""
                         />
 

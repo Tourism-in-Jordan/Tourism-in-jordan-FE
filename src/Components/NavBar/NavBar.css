@@ -33,6 +33,7 @@
     border-radius: 3px;
 }
 #logoNavbar{
+  padding-left: 10px;
   width: 60px;
   height: 60px;
 }
