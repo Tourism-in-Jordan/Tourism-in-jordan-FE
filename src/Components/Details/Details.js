@@ -68,22 +68,22 @@ export default function Details(props) {
                         <div id={props.data.id} className="description">
 
                             <div id="description-Left" >
-                                <div><h1 className="site">{props.data.name}</h1>
-                                <br></br>
+                                <div id="description-Left-content" >
+                                    <h1 className="site">{props.data.name}</h1>
                                     <h5 className="cityName">{`${props.data.city}`}</h5>
-                                    <Weather className="temp"  data={weather} />
+                                    <Weather className="temp" data={weather} />
                                     <p className="overview">{props.data.overview}</p></div>
                                 <div id="description-Left-icons" >
-                                        <div id="ico2">
-                                    <Link id="link" onClick={handleMapShow}>
+                                    <div id="ico2">
+                                        <Link id="link" onClick={handleMapShow}>
                                             <img title="Open Location on Map" src={require('./map.png')} alt="image" />
-                                    </Link>
-                                        </div>
-                                        <div id="ico">
-                                    {isAuthenticated && (<Link id="link" onClick={addToVisitList}>
-                                            <img title="Add to Favorite Sites"  src={require('./add.png')} alt="image" />
-                                    </Link>)}
-                                        </div>
+                                        </Link>
+                                    </div>
+                                    <div id="ico">
+                                        {isAuthenticated && (<Link id="link" onClick={addToVisitList}>
+                                            <img title="Add to Favorite Sites" src={require('./add.png')} alt="image" />
+                                        </Link>)}
+                                    </div>
                                 </div>
 
                             </div>
@@ -122,7 +122,6 @@ export default function Details(props) {
                                         </Carousel>
                                     </div>
                                 </>
-
                             </div>
                         </div>
                         <div id="Main-img">

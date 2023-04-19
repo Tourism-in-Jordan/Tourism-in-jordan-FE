@@ -16,80 +16,46 @@ export default function Header() {
 
             <div >
 
-                <Carousel id='CarouselInHeader' >
-                    <Carousel.Item>
+                <Carousel id='CarouselInHeader' className='removeStyle' >
+                    <Carousel.Item interval={7000} className='slower'>
                         <img
                             className='CarouselImg'
-                            src='https://images.unsplash.com/photo-1671209088974-1ae6f8c95c50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
+                            src='https://rare-gallery.com/uploads/posts/877312-Wadi-Rum-Village-Jordan-Sky-Desert-Mountains-Sand.jpg'
                             alt=""
                         />
-
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item interval={7000} className='slower'>
+                        <img
+                            className='CarouselImg'
+                            src='https://jordantraveler.com/wp-content/uploads/2022/02/7-Days-in-Jordan-Hero.png'
+                            alt=""
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={7000} className='slower'>
                         <img
                             className='CarouselImg'
                             src='https://www.muchbetteradventures.com/magazine/content/images/2022/09/wadi-rum.jpg'
                             alt=""
                         />
-
                     </Carousel.Item>
-                    <Carousel.Item interval={7000}>
+                    <Carousel.Item interval={7000} className='slower'>
                         <img
                             className='CarouselImg'
-                            src='https://cdn.britannica.com/24/153524-050-BA9D084B/Al-Dayr-Petra-Jordan.jpg '
-                            alt=""
-                        />
-
-                    </Carousel.Item>
-                    <Carousel.Item interval={7000}>
-                        <img
-                            className='CarouselImg'
-                            src='https://images.unsplash.com/photo-1679569398860-5f7780d74ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1896&q=80'
-                            alt=""
-                        />
-
-                    </Carousel.Item>
-                    <Carousel.Item interval={7000}>
-                        <img
-                            className='CarouselImg'
-                            src='https://images.unsplash.com/photo-1577199898413-f50a4309e48f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80'
-                            alt=""
-                        />
-
-                    </Carousel.Item>
-                    <Carousel.Item interval={7000}>
-                        <img
-                            className='CarouselImg'
-                            src='https://images.unsplash.com/photo-1630158922952-a92c88afbc4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80'
-                            alt=""
-                        />
-
-                    </Carousel.Item>
-                    <Carousel.Item interval={7000}>
-                        <img
-                            className='CarouselImg'
-                            src='https://images.unsplash.com/photo-1589159856415-286795c9eb3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80d/amman-jordan-1660716296-390X219.jpg'
+                            src='https://images.squarespace-cdn.com/content/v1/58d207cc579fb3df6993f527/1584644586038-08CNAD31EIZ5OCXBDB66/Landscape+Photograph+of+the+tourist+cabin+at+Dibeen+Forest+Jordan+by+Jordan+Landscape+Photographer+Rashad+Anabtawi?format=1500w'
                             alt=""
                         />
                     </Carousel.Item>
-                    <Carousel.Item interval={7000}>
-                        <img
-                            className='CarouselImg'
-                            src='https://i.guim.co.uk/img/media/db7c313dfbed3f7c620a5d9ae7ee6b9d6b26ed85/0_204_4600_2760/master/4600.jpg?width=620&quality=85&auto=format&fit=max&s=5525614f43f74d6215892349b642e978'
-                            alt=""
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item interval={7000}>
+                    <Carousel.Item interval={7000} className='slower'>
                         <img
                             className='CarouselImg'
                             src='https://images.unsplash.com/photo-1598417642835-f05aa7bd7702?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'
                             alt=""
                         />
                     </Carousel.Item>
-                    <Carousel.Item interval={7000}>
+                    <Carousel.Item interval={7000} className='slower'>
                         <img
                             className='CarouselImg'
-                            src='https://images.unsplash.com/photo-1627734383978-627095b4ac05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80'
+                            src='https://jtt.com.jo/wp-content/uploads/2022/05/shutterstock_1459910990-900x600.jpg'
                             alt=""
                         />
                     </Carousel.Item>

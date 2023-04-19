@@ -67,14 +67,15 @@ export default function VisitList(props) {
                                 <Card>
                                     <Card.Img id="img" variant="top" src={site.image} />
                                     <Card.Body>
-                                        <Card.Title>{site.name}</Card.Title>
+                                        <Card.Title className='CardNamePP'>{site.name}</Card.Title>
                                         
                                         <Form onSubmit={(event) => handleUpdate(event, site.id)}>
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control name="feedback" placeholder='Add feedback here' as="textarea" rows={1} ref={commentRef} />
+                                                <Form.Control name="feedback" placeholder='Example ...' as="textarea" rows={1} ref={commentRef} />
                                                 {site.feedback ? site.feedback : "No Feedback yet! "}
                                             </Form.Group>
-                                            <Button variant="primary" type="submit" > Edit Feedback </Button>
+                                            <Button className='buttonPadding' variant="warning" type="submit" >Add Feedback</Button>
+                                            <br></br><br></br>
                                         <Button variant="danger" onClick={() => handleDelete(site.id)}>
                                             Delete
                                         </Button>

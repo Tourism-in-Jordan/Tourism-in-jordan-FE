@@ -33,7 +33,8 @@ export default function Gallery() {
 
 
     return (
-        <>  <div id="page-border"></div>
+        <>
+          {/* <div id="page-border"></div> */}
             <h1 id="GalleryHeader">Gallery</h1>
             <div className="HomeCardContainder">
                 {

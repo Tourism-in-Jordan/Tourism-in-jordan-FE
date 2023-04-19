@@ -7,17 +7,26 @@ import VisitList from "../VisitList/VisitList";
 import Profile from '../Profile/Profile'
 import LoginButton from '../LoginButtons/LoginButton'
 import LogoutButton from '../LoginButtons/LogoutButton'
-
+// import { useState } from "react";
 
 import './NavBar.css'
 export default function NavBar() {
+
+  // const [showMore, setShowMore] = useState(true);
+  // const handleMore = () => setShowMore(!showMore);
+
   return (
     <>
       <nav className="allnav">
-          <div>
-          <img id="logoNavbar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_and_map_of_Jordan.svg/929px-Flag_and_map_of_Jordan.svg.png" />
-          </div>
-        <div id="iconHeader">
+        {/* <div id="more" onClick={handleMore}>
+          <img title="Open Location on Map" src={require('./more.png')} alt="image" />
+        </div> */}
+        <div>
+          <img id="logoNavbar" src={require('./jordan.png')} />
+        </div>
+       
+       {/* <div id="iconHeader" className={ showMore ?'mobile':'desktop'}> */}
+       <div id="iconHeader">
           <Link className="pages" to="/">Home</Link>
           <Link className="pages" to="/VisitList">Favorite sites</Link>
           <Link className="pages" to="/about">About us</Link>
