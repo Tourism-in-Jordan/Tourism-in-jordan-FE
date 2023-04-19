@@ -74,22 +74,20 @@ export default function Details(props) {
                                     <Weather className="temp"  data={weather} />
                                     <p className="overview">{props.data.overview}</p></div>
                                 <div id="description-Left-icons" >
-                                    <Link id="link" onClick={handleMapShow}>
                                         <div id="ico2">
-                                            <img src={require('./map.png')} alt="image" />
-                                        </div>
+                                    <Link id="link" onClick={handleMapShow}>
+                                            <img title="Open Location on Map" src={require('./map.png')} alt="image" />
                                     </Link>
-                                    {isAuthenticated && (<Link id="link" onClick={addToVisitList}>
-                                        <div id="ico">
-                                            <img src={require('./add.png')} alt="image" />
-                                            <p id="VisitListP" >Add to Visit List</p>
                                         </div>
+                                        <div id="ico">
+                                    {isAuthenticated && (<Link id="link" onClick={addToVisitList}>
+                                            <img title="Add to Favorite Sites"  src={require('./add.png')} alt="image" />
                                     </Link>)}
+                                        </div>
                                 </div>
 
                             </div>
                             <div id="description-Right" >
-
                                 <>
                                     {/* <button onClick={addToVisitList}>Add to visit List</button> */}
                                     <div id="pictures">
