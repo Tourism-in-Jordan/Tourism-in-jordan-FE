@@ -29,8 +29,8 @@ export default function NavBar() {
        <div id="iconHeader">
           <Link className="pages" to="/">Home</Link>
           <Link className="pages" to="/VisitList">Favorite sites</Link>
-          <Link className="pages" to="/about">About us</Link>
           <Link className="pages" to="/Gallery">Gallery</Link>
+          <Link className="pages" to="/about">About us</Link>
           <a className="anchour" href="#footer">Contact us</a>
           <NavDropdown title="select a city" id="basic-nav-dropdown" style={{ color: "rgb(177, 178, 179)" }}>
             <NavDropdown.Item href="#1">Petra</NavDropdown.Item>
