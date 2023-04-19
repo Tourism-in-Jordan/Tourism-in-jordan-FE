@@ -1,4 +1,5 @@
 body{
+	background-color: #2f2f2f;
 	background-color: #34495e;
 	font-family: 'Lora', serif;
 }
@@ -10,7 +11,12 @@ body{
 	border-radius: 10px;
 	box-shadow: 5px 5px 15px 10px #262626;
 }
-
+.AboutUs_h1{
+color: #ede5e5;
+}
+.AboutUs_h1{
+	color: #ede5e5;
+}
 .upper{
 	height: 150px;
 	width: 300px;
@@ -36,8 +42,6 @@ h2{
 	position: relative;
 	top: 70px;
 }
-
-
 
 .social{
 	position: relative;
@@ -80,6 +84,9 @@ a:active{
     justify-content: center;
     align-content: center;
   }
+  .alldivend{
+	background-color: #2f2f2f;
+  }
   .AboutUs_h5 {
     font-size: 25px;
     text-align: center !important;
@@ -89,19 +96,18 @@ a:active{
     border: 20%;
     color: rgb(0, 0, 0);
     border-radius: 20px;
-    border-color: rgb(0, 0, 0);
     padding: 3%;
-    background-color: #ccc;
+    background-color: #817e7e;
     
   }
   .h3AboutUs{
-    color: black;
+    color: rgb(0, 0, 0);
 	text-align: center;
 	position: relative;
 	top: 100px;
   }
   .h4AboutUs{
-    color: black;
+    color: rgb(0, 0, 0);
 	text-align: center;
 	position: relative;
 	top: 120px;
