@@ -8,9 +8,7 @@
 
 .modal-xl {
     padding-top: 3vh;
-    /* margin-top: 0px; */
-    /* max-width: 100%; */
-    /* max-height: 120vh ; */
+   
 }
 
 .imageModal {
@@ -18,9 +16,7 @@
     height: 89vh;
 }
 
-/* #slider{
-    width: 1600px;
-} */
+
 
 #imageBody {
     width: 100%;

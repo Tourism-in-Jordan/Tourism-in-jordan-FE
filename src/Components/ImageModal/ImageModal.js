@@ -6,9 +6,7 @@ function ImageModal(props) {
   return (
 
     <Modal className="modal-xl" id='imgmodal' show={props.show} onHide={props.handleClose} >
-      {/* <Modal.Header closeButton>
-        <Modal.Title></Modal.Title>
-      </Modal.Header> */}
+
       <Modal.Body id='imageBody' >
         <Carousel id='slider' >
           <Carousel.Item className='ImageModalCarousel' interval={5000}>
@@ -41,11 +39,7 @@ function ImageModal(props) {
           </Carousel.Item>
         </Carousel>
       </Modal.Body>
-      {/* <Modal.Footer>
-        <Button variant="secondary" onClick={props.handleClose}>
-          Close
-        </Button>
-      </Modal.Footer> */}
+   
     </Modal>
 
   )

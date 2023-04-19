@@ -8,7 +8,7 @@ const {user,isAuthenticated}= useAuth0()
         <div id="profile">
            {user?.picture && <img id="imgProfile" src={user.picture}/>}
            {/* <br></br> */}
-           <h4 id="userName">{user?.name} </h4>
+           {/* <h4 id="userName">{user?.name} </h4> */}
         </div>
 
     )

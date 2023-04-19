@@ -48,33 +48,15 @@
 }
 .carousel-fade{
     opacity: 0;
-    transition-duration: .6s;
+    transition-duration: 3s;
     transition-property: opacity;
 }
 
 #h3OfHeader{
     color: #dddddd;
 }
-  /* .carousel-item {
-    opacityrgb(251, 183, 87)
-    transition: opacity 3s ease-in-out;
+
+.carousel-item {
+    transition: transform 3s ease-in-out;
   }
-  
-  .carousel-item.active,
-  .carousel-item-next,
-  .carousel-item-prev {
-    opacity: 1;
-  }
-  
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-right {
-    opacity: 0;
-    transition: opacity 3s ease-in-out;
-  }
-  
-  .carousel-fade .carousel-item-next.carousel-item-left,
-  .carousel-fade .carousel-item-prev.carousel-item-right,
-  .carousel-fade .carousel-item-next.carousel-item-right,
-  .carousel-fade .carousel-item-prev.carousel-item-left {
-    opacity: 1;
-  } */
+ 

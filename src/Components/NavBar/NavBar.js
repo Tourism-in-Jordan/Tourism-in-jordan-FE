@@ -14,8 +14,9 @@ export default function NavBar() {
   return (
     <>
       <nav className="allnav">
+      <div><img id="logoNavbar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_and_map_of_Jordan.svg/929px-Flag_and_map_of_Jordan.svg.png" /></div>
         <div id="iconHeader">
-          <img id="logoNavbar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_and_map_of_Jordan.svg/929px-Flag_and_map_of_Jordan.svg.png" />
+         
           <Link className="pages" to="/">Home</Link>
           <Link className="pages" to="/VisitList">Favorite sites</Link>
           <Link className="pages" to="/about">About us</Link>
