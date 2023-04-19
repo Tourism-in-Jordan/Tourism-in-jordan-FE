@@ -16,13 +16,16 @@ export default function AboutUs() {
         {TeamData.map(item =>
           <div class="TeamCard">
             <div class="upper">
-              <a href={item.github} ><img className="imgAboutUs" src={item.img} /></a>
+              <img className="imgAboutUs" src={item.img} />
             </div>
             <h3 className="h3AboutUs">{item.name}</h3>
             <h4 className="h4AboutUs">Full Stack Developer</h4>
             <div class="social">
            
-           
+            <a href={item.facebook}> <i class="fa-brands fa-facebook"></i></a>
+            <a href={item.github}><i class="fa-brands fa-github"></i></a>
+           {/* <a href=""> <i class="fa-solid fa-phone"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a> */}
        
             </div>
           </div>
