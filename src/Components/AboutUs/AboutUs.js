@@ -29,6 +29,8 @@ export default function AboutUs() {
         )}
       </div>
       <br></br><br></br>
+      <div id="page-border"></div>
     </div>
+    
   );
 }
