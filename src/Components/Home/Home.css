@@ -1,0 +1,53 @@
+.HomeCardContainder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 25px 8%;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    gap: 20px;
+    background-color: #2f2f2f;
+    /* top: 0; */
+    right: 0;
+}
+.HomeCardContainder h3 {
+    color: #ffffff;
+}
+* {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+#GalleryHeader {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    text-shadow: #000000;
+    background-color: #2f2f2f;
+}
+@media screen and (max-width: 1450px){
+    .HomeCardContainder{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1200px){
+    .HomeCardContainder{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 750px){
+    .HomeCardContainder{
+        grid-template-columns: 1fr;
+    }
+}
+/* @media screen and (max-width: 450px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+} */
+
+
+  
