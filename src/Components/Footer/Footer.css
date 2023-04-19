@@ -162,3 +162,15 @@ footer .social-icon li i:hover {
   flex-direction: row;
   justify-content: space-between;
 }
+.InfoPad{
+  padding-left: 70px;
+  
+}
+@media screen and (max-width: 1000px){
+  .InfoPad{
+    padding-left: 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+  }
+}

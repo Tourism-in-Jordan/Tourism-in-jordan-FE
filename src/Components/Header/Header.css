@@ -20,13 +20,6 @@
     height: 100vh;
     
 }
-#h1OfHeader{
-    font-size: 6rem;
-    color: #faf3f3;
-    margin-top: 40vh;
-    align-items: center;
-
-}
 
 #CarouselInHeader{
     width: 100%;
@@ -54,6 +47,31 @@
 
 #h3OfHeader{
     color: #dddddd;
+    margin: auto;
+    width: 80%;
+}
+#h1OfHeader {
+    font-size: 4rem;
+    color: #faf3f3;
+    align-items: center;
+}
+#h1OfHeader{
+    font-size: 6rem;
+    color: #faf3f3;
+    margin-top: 40vh;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 450px){
+    #h1OfHeader {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 355px){
+    #h1OfHeader {
+        font-size: 3rem;
+    }
 }
   /* .carousel-item {
     opacityrgb(251, 183, 87)

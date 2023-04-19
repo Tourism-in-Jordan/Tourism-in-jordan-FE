@@ -20,14 +20,14 @@ export default function Footer() {
                             details about each plaece( contain all overview , picutres, location, weather status...), if you liked some places you can (add or delete )it from your favorite list and you can write your feed back about the place .</p>
                     </div>
 
-                    <div style={{paddingLeft:'180px',paddingBottom:"120px"}} class="col-md-4">
+                    <div class="col-lg-4 InfoPad">
                         <h4>Information</h4>
                         <ul class="address1">
                         <li><i class="fa fa-map-marker"></i>Jordan-Amman</li>
                             <li><i class="fa fa-envelope"></i><a href="mailto:#">team@gmail.com</a></li></ul>
                     </div>
 
-                    <div style={{paddingLeft:'120px',paddingBottom:"167px"}} class="col-md-4">
+                    <div class="col-lg-4">
                         <h4>Follow us</h4>
                         <ul class="social-icon">
                         <li><a className="facebook" href="https://ltuc-asac.slack.com/archives/C04NW8K1ANT"><CDBIcon fab icon="slack" size="1x"/></a></li>

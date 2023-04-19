@@ -86,6 +86,7 @@ export default function VisitList(props) {
                     })
                 }
             </div>
+            <div id="page-border"></div>
         </>
     ))
 }
