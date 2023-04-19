@@ -10,7 +10,7 @@ export default function Header() {
 
             <div id='DivOfHeader'>
                 <h1 id='h1OfHeader'>Tourism In Jordan</h1><br></br>
-                <h3 id='h3OfHeader'>This Webpage will help you discover best places to visit in Jordan </h3>
+                <h3 id='h3OfHeader'>This Website Will Help You Discover Top Tourist Sites In Jordan.</h3>
                 {/* <p id="pOfHeader">The Hashemite Kingdom of Jordan is strategically <br/>located in the Middle East. Bound by Syria to<br/> the north, Iraq to the northeast, <br/>Saudi Arabia  to the east and south,<br/> the Red Sea to the south.</p> */}
             </div>
 
