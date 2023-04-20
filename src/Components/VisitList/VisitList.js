@@ -71,10 +71,10 @@ export default function VisitList(props) {
                                         
                                         <Form onSubmit={(event) => handleUpdate(event, site.id)}>
                                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control name="feedback" placeholder='Example ...' as="textarea" rows={1} ref={commentRef} />
+                                                <Form.Control name="feedback" placeholder='Write feedback ...' as="textarea" rows={1} ref={commentRef} />
                                                 {site.feedback ? site.feedback : "No Feedback yet! "}
                                             </Form.Group>
-                                            <Button className='buttonPadding' variant="warning" type="submit" >Add Feedback</Button>
+                                            <Button className='buttonPadding' variant="warning" type="submit" >Feedback</Button>
                                             <br></br><br></br>
                                         <Button variant="danger" onClick={() => handleDelete(site.id)}>
                                             Delete
