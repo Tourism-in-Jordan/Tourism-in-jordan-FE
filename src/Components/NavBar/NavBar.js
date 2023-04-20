@@ -24,7 +24,6 @@ export default function NavBar() {
         <div>
           <img id="logoNavbar" src={require('./jordan.png')} />
         </div>
-       
        {/* <div id="iconHeader" className={ showMore ?'mobile':'desktop'}> */}
        <div id="iconHeader">
           <Link className="pages" to="/">Home</Link>
@@ -32,7 +31,7 @@ export default function NavBar() {
           <Link className="pages" to="/Gallery">Gallery</Link>
           <Link className="pages" to="/about">About us</Link>
           <a className="anchour" href="#footer">Contact us</a>
-          <NavDropdown title="select a city" id="basic-nav-dropdown" style={{ color: "rgb(177, 178, 179)" }}>
+          <NavDropdown title="Select Site" id="basic-nav-dropdown" style={{ color: "rgb(177, 178, 179)" }}>
             <NavDropdown.Item href="#1">Petra</NavDropdown.Item>
             <NavDropdown.Item href="#2">Om-Qais</NavDropdown.Item>
             <NavDropdown.Item href="#3">Dead sea</NavDropdown.Item>
@@ -54,7 +53,6 @@ export default function NavBar() {
           <LogoutButton />
           <Profile />
         </div>
-
       </nav>
     </>
   );
